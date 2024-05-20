@@ -1,0 +1,58 @@
+// ======= Fonts ==============
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+// ======= Variables ==============
+// === Colors ======
+$DarkCyan: #1a9e9a;
+$PaleTurquoise: #8ededb;
+$LightCyan: #d2f2f1;
+$Goldenrod: #dbb13b;
+$DarkSlateBlue: #2d325a;
+$DimGray: #505050;
+$Seashell: #aaa;
+$Romance: #f0f1f3;
+$White: #fff;
+$Black: #000;
+
+// === Transitions ======
+$Transition: all 0.3s ease;
+
+// ======= Resets ==============
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+button {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+// Remove Blue Background-color Of Auto Complete
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+input,
+p {
+    color: $DimGray;
+}
+
+.typography {
+    font-weight: 700;
+}

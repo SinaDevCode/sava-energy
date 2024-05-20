@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+input,
+p {
+  color: #505050;
+}
+
+.typography {
+  font-weight: 700;
+}
+
+.modal-toggle {
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+main h1 {
+  margin-top: 2rem;
+}
+main .close-login {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  color: #aaa;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main .close-login:hover {
+  color: #000;
+}
+main .loginPage-image {
+  height: 100%;
+  width: 45%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+main .loginPage-image img {
+  width: 100%;
+  height: 100%;
+}
+main .loginPage-form {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .loginPage-form form {
+  margin-bottom: 4rem;
+  width: 375px;
+}
+main .loginPage-form form .username-input,
+main .loginPage-form form .password-input {
+  position: relative;
+}
+main .loginPage-form form .username-input input,
+main .loginPage-form form .password-input input {
+  height: 3.125rem;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  border: 2px solid #aaa;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+main .loginPage-form form .username-input input.active, main .loginPage-form form .username-input input:focus,
+main .loginPage-form form .password-input input.active,
+main .loginPage-form form .password-input input:focus {
+  border-color: #1a9e9a;
+}
+main .loginPage-form form .username-input input.active ~ label, main .loginPage-form form .username-input input:focus ~ label,
+main .loginPage-form form .password-input input.active ~ label,
+main .loginPage-form form .password-input input:focus ~ label {
+  color: #1a9e9a;
+}
+main .loginPage-form form .username-input label,
+main .loginPage-form form .password-input label {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.75rem;
+  font-size: 12px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  color: #aaa;
+  background-color: #fff;
+  padding: 0 0.25rem;
+}
+main .loginPage-form form .username-input .icons,
+main .loginPage-form form .password-input .icons {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+main .loginPage-form form .username-input .icons:not(#show-hide),
+main .loginPage-form form .password-input .icons:not(#show-hide) {
+  pointer-events: none;
+}
+main .loginPage-form form .username-input .icons#show-hide,
+main .loginPage-form form .password-input .icons#show-hide {
+  right: 3rem;
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+}
+main .loginPage-form form .forget {
+  display: flex;
+  justify-content: end;
+}
+main .loginPage-form form .forget span {
+  font-size: 12px;
+  text-decoration: underline;
+  margin: 0.25rem 0;
+  color: #505050;
+}
+main .loginPage-form form .forget span:hover {
+  text-decoration: none;
+}
+main .loginPage-form form #submit {
+  height: 3rem;
+  border-radius: 1rem;
+  border: 2px solid #1a9e9a;
+  margin-top: 3rem;
+  font-weight: 500;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #1a9e9a;
+}
+main .loginPage-form form #submit:hover {
+  background-color: #1a9e9a;
+  color: #fff;
+}
+main .account {
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 2px solid #1a9e9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #505050;
+}
+main .account span {
+  color: #1a9e9a;
+  text-decoration: underline;
+}
+main .account span:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 724px) {
+  main .loginPage-image {
+    display: none;
+  }
+  main .loginPage-form {
+    width: 100%;
+  }
+}
