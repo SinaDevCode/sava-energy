@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
     <title>Sava Energy | Login</title>
+    <!------- Font Awesome 6.5.2 ------->
+    <link rel="stylesheet" href="./../src/icons/fontawesome/css/all.min.css">
     <!------- Styles ------->
     <link rel="stylesheet" href="./../src/styles/login.css">
 </head>
@@ -30,15 +32,16 @@
                     <i class="fa-solid fa-lock icons"></i>
                 </div>
                 <span class="forget">
-                    <span class="modal-toggle">Forgot Password</span>
+                    <span class="modal-toggle" modal-toggle>Forgot Password</span>
                 </span>
                 <button type="button" id="submit">Login</button>
             </form>
-            <p class="account">Do not have an account?<span class="modal-toggle">Sign up</span></p>
+            <p class="account">Do not have an account?<span modal-toggle>Sign up</span></p>
         </article>
     </main>
     <!------- Help Modal ------->
-    <div class="modal">
+    <div class="modal open">
+        <i class="fa-solid fa-close close-modal"></i>
 
     </div>
 

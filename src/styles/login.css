@@ -20,6 +20,7 @@ button {
   width: 100%;
   font-family: inherit;
   font-size: inherit;
+  outline: none;
 }
 
 input:-webkit-autofill,
@@ -35,10 +36,6 @@ p {
 
 .typography {
   font-weight: 700;
-}
-
-.modal-toggle {
-  cursor: pointer;
 }
 
 main {
@@ -163,9 +160,13 @@ main .loginPage-form form .forget span {
   text-decoration: underline;
   margin: 0.25rem 0;
   color: #505050;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 main .loginPage-form form .forget span:hover {
   text-decoration: none;
+  color: #1a9e9a;
 }
 main .loginPage-form form #submit {
   height: 3rem;
@@ -178,7 +179,7 @@ main .loginPage-form form #submit {
   cursor: pointer;
   color: #1a9e9a;
 }
-main .loginPage-form form #submit:hover {
+main .loginPage-form form #submit:focus, main .loginPage-form form #submit:hover {
   background-color: #1a9e9a;
   color: #fff;
 }
@@ -197,9 +198,40 @@ main .account {
 main .account span {
   color: #1a9e9a;
   text-decoration: underline;
+  cursor: pointer;
 }
 main .account span:hover {
   text-decoration: none;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  z-index: 10;
+  display: none;
+}
+.modal.open {
+  display: flex;
+}
+.modal .close-modal {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.modal .close-modal:hover {
+  color: #000;
 }
 
 @media screen and (max-width: 724px) {

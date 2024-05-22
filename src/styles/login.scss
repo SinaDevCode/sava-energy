@@ -1,9 +1,5 @@
 @import "./components/style.scss";
 
-.modal-toggle {
-    cursor: pointer;
-}
-
 main {
     $ImageWidth: 45%;
     padding: 1.5rem;
@@ -132,9 +128,13 @@ main {
                     text-decoration: underline;
                     margin: 0.25rem 0;
                     color: $DimGray;
+                    font-weight: 500;
+                    transition: $Transition;
+                    cursor: pointer;
 
                     &:hover {
                         text-decoration: none;
+                        color: $DarkCyan;
                     }
                 }
             }
@@ -150,6 +150,7 @@ main {
                 cursor: pointer;
                 color: $DarkCyan;
 
+                &:focus,
                 &:hover {
                     background-color: $DarkCyan;
                     color: $White;
@@ -172,6 +173,7 @@ main {
         span {
             color: $DarkCyan;
             text-decoration: underline;
+            cursor: pointer;
             
             &:hover {
                 text-decoration: none;
@@ -180,9 +182,43 @@ main {
     }
 }
 
+// ======= Help Modal ==============
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.5px);
+    z-index: $Modal;
+    display: none;
+
+    &.open {
+        display: flex;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        padding: 0.25rem;
+        font-size: 1.5rem;
+        color: $White;
+        border-radius: 0.25rem;
+        transition: $Transition;
+        cursor: pointer;
+
+        &:hover {
+            color: $Black;
+        }
+    }
+}
+
+// ======= BreakPoint ==============
 @media screen and (max-width: 724px){
     main {
-
         .loginPage-image {
             display: none;
         }

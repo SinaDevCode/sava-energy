@@ -17,6 +17,9 @@ $Black: #000;
 // === Transitions ======
 $Transition: all 0.3s ease;
 
+// === Z-index ======
+$Modal: 10;
+
 // ======= Resets ==============
 * {
     margin: 0;
@@ -39,6 +42,7 @@ button {
     width: 100%;
     font-family: inherit;
     font-size: inherit;
+    outline: none;
 }
 
 // Remove Blue Background-color Of Auto Complete
