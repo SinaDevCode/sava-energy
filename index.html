@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
-    <title>Document</title>
-    <!------- Fonts ------->
-    <link rel="stylesheet" href="style.css">
+    <title>Sava Energy | Home</title>
+    <!------- Font Awesome 6.5.2 ------->
+    <link rel="stylesheet" href="./src/icons/fontawesome/css/all.min.css">
+    <!------- Swiper ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!------- Styles ------->
+    <link rel="stylesheet" href="src/styles/index.css">
 </head>
 <body>
-    
+    <!------- Preloader ------->
+    <div class="preloader" preloader>
+        <div class="cubes">
+            <div class="cube"><div class="cube_inner"></div></div>
+            <div class="cube"><div class="cube_inner"></div></div>
+            <div class="cube"><div class="cube_inner"></div></div>
+        </div>
+    </div>
+    <!------- Swiper ------->
+    <section class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="src/images/banner/Sava-Site-Banner-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="src/images/banner/Sava-Site-Banner-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="src/images/banner/Sava-Site-Banner-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </section>
+    <!------- Swiper CDN ------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!------- Script ------->
+    <script src="src/scripts/script.js"></script>
 </body>
 </html>

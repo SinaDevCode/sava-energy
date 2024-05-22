@@ -1,0 +1,132 @@
+// ======= Keyframe =======
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: translate(0, -200%);
+        animation-timing-function: ease-in;
+    }
+
+    75% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes morph {
+    0% {
+        transform: scaleY(1);
+    }
+
+    10% {
+        transform: scaleY(1);
+    }
+
+    20%,
+    25% {
+        transform: scaleX(1.3) scaleY(0.6);
+    }
+
+    30% {
+        animation-timing-function: ease-in-out;
+    }
+
+    40% {
+        transform: scaleY(1);
+    }
+
+    70%,
+    85%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    75% {
+        transform: scaleX(1.2) scaleY(0.8);
+    }
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+    }
+
+    95%,
+    100% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+// ======= Preloader =======
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: $Loader;
+    background-color: $LightCyan;
+
+    .cubes {
+        $uibSize: 125px;
+        $uibColor: $DarkSlateBlue;
+        $uibSpeed: 1.75s;
+        width: $uibSize;
+        height: calc($uibSize * 0.6);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .cube {
+            flex-shrink: 0;
+            width: calc($uibSize * 0.2);
+            height: calc($uibSize * 0.2);
+            animation: jump $uibSpeed ease-in-out infinite;
+
+            .cube_inner {
+                display: block;
+                height: 100%;
+                width: 100%;
+                border-radius: 25%;
+                background-color: $uibColor;
+                transform-origin: center bottom;
+                transition: background-color 0.3s ease;
+                animation: morph $uibSpeed ease-in-out infinite;
+            }
+
+            &:nth-child(2) {
+                animation-delay: calc($uibSpeed * -0.36);
+
+                .cube_inner {
+                    animation-delay: calc($uibSpeed * -0.36);
+                }
+            }
+
+            &:nth-child(3) {
+                animation-delay: calc($uibSpeed * -0.2);
+    
+                .cube_inner {
+                    animation-delay: calc($uibSpeed * -0.2);
+                }
+            }
+        }
+    }
+
+    &.loaded {
+        animation: load 500ms ease forwards;
+    }
+}
