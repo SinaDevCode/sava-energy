@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+input,
+p {
+  color: #505050;
+}
+
+.typography {
+  font-weight: 700;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate(0, -200%);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translate(0, 0);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes morph {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scaleY(1);
+  }
+  20%, 25% {
+    transform: scaleX(1.3) scaleY(0.6);
+  }
+  30% {
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: scaleY(1);
+  }
+  70%, 85%, 100% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleX(1.2) scaleY(0.8);
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+.preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  background-color: #d2f2f1;
+}
+.preloader .cubes {
+  width: 125px;
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.preloader .cubes .cube {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  animation: jump 1.75s ease-in-out infinite;
+}
+.preloader .cubes .cube .cube_inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 25%;
+  background-color: #2d325a;
+  transform-origin: center bottom;
+  transition: background-color 0.3s ease;
+  animation: morph 1.75s ease-in-out infinite;
+}
+.preloader .cubes .cube:nth-child(2) {
+  animation-delay: -0.63s;
+}
+.preloader .cubes .cube:nth-child(2) .cube_inner {
+  animation-delay: -0.63s;
+}
+.preloader .cubes .cube:nth-child(3) {
+  animation-delay: -0.35s;
+}
+.preloader .cubes .cube:nth-child(3) .cube_inner {
+  animation-delay: -0.35s;
+}
+.preloader.loaded {
+  animation: load 500ms ease forwards;
+}
