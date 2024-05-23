@@ -55,8 +55,22 @@ main {
 
             .table-wrapper {
                 width: calc(100% - 1rem - 200px);
-            }
 
+                .table-sticky {
+                    position: sticky;
+                    top: 0;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        background-color: $White;
+                        height: 1rem;
+                        top: -1rem;
+                        left: 0;
+                    }
+                }
+            }
         }
     }
 }

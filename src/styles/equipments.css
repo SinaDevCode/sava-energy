@@ -276,6 +276,19 @@ main .equipments .container .equipments-list button.active {
 main .equipments .container .table-wrapper {
   width: calc(100% - 1rem - 200px);
 }
+main .equipments .container .table-wrapper .table-sticky {
+  position: sticky;
+  top: 0;
+}
+main .equipments .container .table-wrapper .table-sticky::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 1rem;
+  top: -1rem;
+  left: 0;
+}
 
 table {
   width: 100%;
