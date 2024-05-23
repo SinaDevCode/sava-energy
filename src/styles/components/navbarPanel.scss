@@ -1,0 +1,100 @@
+// ======= Navbar =======
+nav {
+    padding: 0 2rem;
+    height: 4rem;
+    width: 100%;
+    background-color: $White;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 52px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            object-position: center;
+        }
+
+        .nav-links {
+            margin: 0 3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            a {
+                padding: 10px 1.5rem;
+                font-size: 14px;
+                font-weight: 500;
+                color: $DarkCyan;
+                border: 1px solid $DarkCyan;
+                border-radius: 1.5rem;
+                width: auto;
+                text-align: center;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $LightCyan;
+                }
+    
+                &.active {
+                    background-color: $DarkCyan;
+                    color: $White;
+                }
+            }
+        }
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .search {
+            position: relative;
+            height: 2.5rem;
+
+            .search-input {
+                height: 100%;
+                background-color: $Romance;
+                padding: 1rem 2.5rem 1rem 1rem;
+                border: none;
+                outline: none;
+                border-radius: 1.5rem;
+                width: 250px;
+                color: $DimGray;
+                font-size: 14px;
+            }
+
+            .fa-magnifying-glass {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $DimGray;
+            }
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $Romance;
+            height: 40px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            cursor: pointer;
+
+            i {
+                color: $DimGray;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}

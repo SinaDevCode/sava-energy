@@ -38,7 +38,7 @@ const login = async () => {
     } else {
         let result = data.find(arr => arr.username === userInput.value && arr.password === passInput.value)
         if (result) {
-            window.location.href = `http://127.0.0.1:5500/panels/${result.id}/dashboard.html`;
+            window.location.href = `http://127.0.0.1:5500/panels/${result.id}/reports.html`;
         } else {
             userInput.value = '';
             passInput.value = '';
