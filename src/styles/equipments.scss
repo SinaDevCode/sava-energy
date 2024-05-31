@@ -1,6 +1,5 @@
-// ======= Import ==============
-@import "./components/style.scss", "./components/preloader.scss", "./components/navbarPanel.scss";
-
+// ------- Imports -------
+@import './components/style.scss', './components/preloader.scss', './components/navbarPanel.scss';
 main {
     background-color: $Romance;
     padding: 1rem 2rem;
@@ -129,10 +128,6 @@ table {
 
         &.quantity {
             max-width: 100px;
-        }
-
-        &.SN {
-            max-width: 200px;
         }
     }
 }

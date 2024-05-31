@@ -1,23 +1,23 @@
 "use strict";
 
-const body = document.querySelector('body');
+// ------- Preloader -------
+const body = document.body;
 const preloader = document.querySelector('[preloader]');
-const images = document.querySelectorAll('img');
+
+body.style.overflow = "hidden";
+
+window.addEventListener('DOMContentLoaded', () => {
+    preloader.classList.add('loaded');
+    body.style.overflow = "auto";
+});
+
+// ------- Table Content -------
 const tbody = document.querySelector('tbody');
 const categories = document.querySelectorAll('.equipments-list button');
 
-// ======= Preloader ==============
-body.style.overflow = "hidden";
-
-window.addEventListener('load', () => {
-    preloader.classList.add('loaded');
-    body.style.overflow = "hidden";
-});
-
-// ======= Table Content ==============
-const defaultTableContent = async () => {
-    const response = await fetch("http://127.0.0.1:5500/src/jsons/Inventory.json");
-    const data = await response.json();
+const content = async () => {
+    const res = await fetch("http://127.0.0.1:5500/src/jsons/inventory.json");
+    const data = await res.json();
 
     for (let i = 0; i < data.length; i++) {
         if (data[i].id === "VG") {
@@ -27,20 +27,19 @@ const defaultTableContent = async () => {
                     <td>${data[i].brand}</td>
                     <td>${data[i].partNumber}</td>
                     <td>${data[i].quantity}</td>
-                    <td>${data[i].SN[0]}</td>
                 </tr>
             `
             tbody.innerHTML += row;
-        }
+        }        
     }
 }
 
-defaultTableContent();
+content();
 
-// ======= Build The Table By Category ==============
+// ------- Build The Table By Category -------
 categories.forEach(category => {
     category.addEventListener('click', async () => {
-        const response = await fetch("http://127.0.0.1:5500/src/jsons/Inventory.json");
+        const response = await fetch("http://127.0.0.1:5500/src/jsons/inventory.json");
         const data = await response.json();
 
         let tr = document.querySelectorAll("tbody tr");
@@ -58,7 +57,6 @@ categories.forEach(category => {
                         <td>${data[i].brand}</td>
                         <td>${data[i].partNumber}</td>
                         <td>${data[i].quantity}</td>
-                        <td>${data[i].SN[0]}</td>
                     </tr>
                 `
                 tbody.innerHTML += row;

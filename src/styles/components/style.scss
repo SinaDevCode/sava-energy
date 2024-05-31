@@ -1,8 +1,8 @@
-// ======= Fonts ==============
+// ------- Fonts -------
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
-// ======= Variables ==============
-// === Colors ======
+// ------- Variables -------
+// --- Colors ----
 $DarkCyan: #1a9e9a;
 $PaleTurquoise: #8ededb;
 $LightCyan: #d2f2f1;
@@ -14,19 +14,15 @@ $Romance: #f0f1f3;
 $White: #fff;
 $Black: #000;
 
-// === Transitions ======
+// --- Transitions ----
 $Transition: all 0.3s ease;
 
-// === Z-index ======
+// --- Z-index ---
 $Loader: 20;
+$Navbar: 15;
 $Modal: 10;
 
-// === Scrollbar ======
-$sb-track-color: #232E33;
-$sb-thumb-color: #6BAF8D;
-$sb-size: 14px;
-
-// ======= Resets ==============
+// ------- Resets -------
 * {
     margin: 0;
     padding: 0;
@@ -55,12 +51,16 @@ button {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    -webkit-box-shadow: 0 0 0 1000px $White inset !important;
 }
 
 input,
 p {
     color: $DimGray;
+}
+
+a {
+    text-decoration: none;
 }
 
 .typography {

@@ -34,6 +34,10 @@ p {
   color: #505050;
 }
 
+a {
+  text-decoration: none;
+}
+
 .typography {
   font-weight: 700;
 }
@@ -157,7 +161,8 @@ nav .title .logo {
   width: 52px;
   aspect-ratio: 1;
   border-radius: 50%;
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
 }
 nav .title .nav-links {
   margin: 0 3rem;
@@ -331,7 +336,4 @@ table td.partNumber {
 }
 table td.quantity {
   max-width: 100px;
-}
-table td.SN {
-  max-width: 200px;
-}
+}/*# sourceMappingURL=equipments.css.map */

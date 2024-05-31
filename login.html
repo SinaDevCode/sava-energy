@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sava Energy | Login Page</title>
+    <!------ Font Awesome ------>
+    <link rel="stylesheet" href="src/icons/fontawesome/css/all.min.css">
+    <!------ Styles ------>
+    <link rel="stylesheet" href="./src/styles/login.css">
+</head>
+<body>
+    <main>
+        <section class="login-image">
+            <img src="./src/images/login/1.jpg" alt="Login Page Image">
+        </section>
+        <article class="login-form">
+            <h1 class="typography">Sava Energy</h1>
+            <a href="./index.html">
+                <i class="fa-solid fa-close close-login"></i>
+            </a>
+            <form>
+                <div class="username-input">
+                    <input type="text" id="username" autocomplete="off" maxlength="25">
+                    <label for="username">Username</label>
+                    <i class="fa-solid fa-user-large icons"></i>
+                </div>
+                <div class="password-input">
+                    <input type="password" id="password" autocomplete="off" maxlength="25">
+                    <label for="password">Password</label>
+                    <i id="show-hide" class="fa-solid fa-eye-slash icons"></i>
+                    <i class="fa-solid fa-lock icons"></i>
+                </div>
+                <span class="forget">
+                    <span class="modal-toggle" modalToggle>Forgot Password</span>
+                </span>
+                <button type="button" id="submit">Login</button>
+            </form>
+            <div class="account">
+                <img src="src/images/login/Sava-Detail-Site.png" alt="">
+                <p>Do not have an account? <span modalToggle>Sign up</span></p>
+            </div>
+        </article>
+    </main>
+    <!------ Help Modal ------>
+    <div class="modal" modal>
+        <i class="fa-solid fa-close close-modal"></i>
+        <div class="help-center">
+            <h2>Help Center</h2>
+            <p class="support-text">Send an email to us <a href="https://mail.google.com/mail/?view=cm&fs=1&to=customersupport@savaenergyco.com" target="_blank" rel="noopener noreferrer">customersupport@savaenergyco.com</a></p>
+            <p class="support-text">After verifying, we will send your account information. This process may take up to 24 hours.</p>
+        </div>
+    </div>
+    <!------- Script ------->
+    <script src="./src/scripts/login.js"></script>
+</body>
+</html>

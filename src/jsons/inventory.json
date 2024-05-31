@@ -1,0 +1,107 @@
+[
+    {
+        "id": "VG",
+        "title": "VG meter model 800",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    },
+    {
+        "id": "VG",
+        "title": "VG meter model 35",
+        "brand": "Fann",
+        "partNumber": "",
+        "quantity": ""
+    },
+    {
+        "id": "VG",
+        "title": "Fuse 4 AMP for VG 800",
+        "brand": "Ofite",
+        "partNumber": "130-10-503",
+        "quantity": 12
+    },
+    {
+        "id": "VG",
+        "title": "Torsion Spring Assy; F1.0",
+        "brand": "Ofite",
+        "partNumber": "134-10",
+        "quantity": 1
+    },
+    {
+        "id": "VG",
+        "title": "Motor for VG 35SA- 115V -60 HZ",
+        "brand": "Fann",
+        "partNumber": "",
+        "quantity": 1
+    },
+    {
+        "id": "VG",
+        "title": "Adaptor for VG 35A - 230 V",
+        "brand": "Stancor",
+        "partNumber": "P-8631",
+        "quantity": 2
+    },
+    {
+        "id": "VG",
+        "title": "Coupling Flexfo VG 35",
+        "brand": "Fann",
+        "partNumber": "207152",
+        "quantity": 1
+    },
+    {
+        "id": "VG",
+        "title": "Bearing Main Shaft for VG 35",
+        "brand": "Fann",
+        "partNumber": "207449",
+        "quantity": 1
+    },
+    {
+        "id": "VG",
+        "title": "Bearing 20MM x 42mm",
+        "brand": "Ofite",
+        "partNumber": "132-71",
+        "quantity": 4
+    },
+    {
+        "id": "VG",
+        "title": "Cup Stainless Steel",
+        "brand": "Ofite",
+        "partNumber": "130-76-10-10",
+        "quantity": 2
+    },
+    {
+        "id": "Sheet2",
+        "title": "Sheet 2",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    },
+    {
+        "id": "Sheet2",
+        "title": "Sheet 2",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    },
+    {
+        "id": "Sheet2",
+        "title": "Sheet 2",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    },
+    {
+        "id": "Sheet 3",
+        "title": "Sheet 3",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    },
+    {
+        "id": "Sheet 4",
+        "title": "Sheet 4",
+        "brand": "Ofite",
+        "partNumber": "130-10-C-5",
+        "quantity": 3
+    }
+]

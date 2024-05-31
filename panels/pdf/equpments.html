@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sava Energy | Equipments Inventory</title>
+    <!------ Font Awesome ------>
+    <link rel="stylesheet" href="./../../src/icons/fontawesome/css/all.min.css">
+    <!------ Styles ------>
+    <link rel="stylesheet" href="./../../src/styles/equipments.css">
+</head>
+<body>
+    <!------- Preloader ------->
+    <div class="preloader" preloader>
+        <div class="cubes">
+            <div class="cube"><div class="cube_inner"></div></div>
+            <div class="cube"><div class="cube_inner"></div></div>
+            <div class="cube"><div class="cube_inner"></div></div>
+        </div>
+    </div>
+    <!------- Navbar ------->
+    <nav>
+        <div class="title">
+            <h1 class="typography">PDF</h1>
+            <li class="nav-links">
+                <a href="./reports.html">QC Reports</a>
+                <a href="./equpments.html" class="active">Equipments Inventory</a>
+            </li>
+        </div>
+        <div class="nav-items">
+            <span class="search">
+                <input type="text" class="search-input" placeholder="Search" maxlength="25" searchBar>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div class="icon">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="icon">
+                <a href="./../../index.html" class="log-out">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!------- Main ------->
+    <main>
+        <section class="equipments">
+            <h2 class="title">Equipments Inventory</h2>
+
+            <div class="container">
+                <li class="equipments-list">
+                    <button>VG</button>
+                    <button>Sheet2</button>
+                    <button>Sheet3</button>
+                    <button>Sheet4</button>
+                    <button>Sheet5</button>
+                    <button>Sheet6</button>
+                    <button>Sheet7</button>
+                    <button>Sheet8</button>
+                    <button>Sheet9</button>
+                    <button>Sheet10</button>
+                    <button>Sheet11</button>
+                    <button>Sheet12</button>
+                </li>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <th class="table-sticky">Title</th>
+                            <th class="table-sticky">Brand</th>
+                            <th class="table-sticky">Part No</th>
+                            <th class="table-sticky">Quantity</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------- Script ------->
+    <script src="./../../src/scripts/equipments.js"></script>
+</body>
+</html>

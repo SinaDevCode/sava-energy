@@ -2,42 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sava Energy | Home</title>
-    <!------- Font Awesome 6.5.2 ------->
-    <link rel="stylesheet" href="./src/icons/fontawesome/css/all.min.css">
-    <!------- Swiper ------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!------- Styles ------->
-    <link rel="stylesheet" href="src/styles/index.css">
+    <!------ Font Awesome ------>
+    <link rel="stylesheet" href="src/icons/fontawesome/css/all.min.css">
+    <!------ Swiper Style ------>
+    <link rel="stylesheet" href="./src/modules/swiper/swiper-bundle.min.css">
+    <!------ Styles ------>
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
-    <!------- Preloader ------->
+    <!------ Preloader ------>
     <div class="preloader" preloader>
-        <div class="cubes">
+        <div class="cubes">            
             <div class="cube"><div class="cube_inner"></div></div>
             <div class="cube"><div class="cube_inner"></div></div>
             <div class="cube"><div class="cube_inner"></div></div>
         </div>
     </div>
-    <!------- Swiper ------->
-    <section class="swiper">
+    <!------ Navbar ------>
+    <nav>
+        <div class="logo">
+            <img src="./src/images/logo/Sava-Logo.png" alt="Sava Energy Logo">
+        </div>
+        <div class="nav-items">
+            <a href="./login.html" class="login">Login</a>
+            <ul>
+                <li class="nav-links">
+                    <a href="./index.html" class="active">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Products</a>
+                    <a href="./labEquipments.html">Lab Equipments</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+                </li>
+                <li class="nav-icons">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <i class="fa-solid fa-bars" menuToggle></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!------ Banner ------>
+    <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="src/images/banner/Sava-Site-Banner-1.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="src/images/banner/Sava-Site-Banner-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="src/images/banner/Sava-Site-Banner-3.jpg" alt="">
+            <img src="src/images/banner/SAVA-SIte-Banner1.png" alt="" class="swiper-slide">
+            <img src="src/images/banner/SAVA-SIte-Banner2.png" alt="" class="swiper-slide">
+            <img src="src/images/banner/SAVA-SIte-Banner3.png" alt="" class="swiper-slide">
+            <img src="src/images/banner/SAVA-SIte-Banner4.png" alt="" class="swiper-slide">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <!-- Our Clients -->
+    <section class="clients">
+        <div class="title">
+            <h2>Our Clients</h2>
+            <h3>Who Do We Work</h3>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="src/images/clients/dana Energy logo.svg" alt="">
+                <img src="src/images/clients/mi logo.svg" alt="">
+                <img src="src/images/clients/pdf logo.svg" alt="">
+                <!------ Clone ------>
+                <img src="src/images/clients/dana Energy logo.svg" alt="">
+                <img src="src/images/clients/mi logo.svg" alt="">
+                <img src="src/images/clients/pdf logo.svg" alt="">
+                <img src="src/images/clients/dana Energy logo.svg" alt="">
+                <img src="src/images/clients/mi logo.svg" alt="">
+                <img src="src/images/clients/pdf logo.svg" alt="">
+                <img src="src/images/clients/dana Energy logo.svg" alt="">
+                <img src="src/images/clients/mi logo.svg" alt="">
+                <img src="src/images/clients/pdf logo.svg" alt="">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </section>
-    <!------- Swiper CDN ------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!------- Script ------->
-    <script src="src/scripts/script.js"></script>
+    <!------ Swiper JS ------>
+    <script src="./src/modules/swiper/swiper-bundle.min.js"></script>
+    <!------ Script ------>
+    <script type="module" src="./src/scripts/index.js"></script>
 </body>
 </html>

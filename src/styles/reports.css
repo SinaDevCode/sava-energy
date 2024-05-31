@@ -34,6 +34,10 @@ p {
   color: #505050;
 }
 
+a {
+  text-decoration: none;
+}
+
 .typography {
   font-weight: 700;
 }
@@ -157,7 +161,8 @@ nav .title .logo {
   width: 52px;
   aspect-ratio: 1;
   border-radius: 50%;
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
 }
 nav .title .nav-links {
   margin: 0 3rem;
@@ -226,3 +231,110 @@ nav .nav-items .icon i {
 nav .nav-items .icon a {
   color: inherit;
 }
+
+main {
+  background-color: #f0f1f3;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+main > section {
+  background-color: #fff;
+}
+main .documents {
+  overflow-y: scroll;
+  width: 70%;
+  height: calc(100vh - 6rem);
+  padding: 1.5rem 2.5rem;
+  border-radius: 1.5rem 0.5rem 0.5rem 1.5rem;
+}
+main .documents h2 {
+  margin-bottom: 1.5rem;
+}
+main .documents table {
+  border-collapse: collapse;
+  width: 100%;
+}
+main .documents table th {
+  font-weight: 500;
+  text-align: start;
+}
+main .documents table thead {
+  border-bottom: 1px solid #2d325a;
+  background-color: #2d325a;
+  color: #fff;
+}
+main .documents table tbody tr {
+  transition: all 0.3s ease;
+  width: 100%;
+}
+main .documents table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #1a9e9a;
+}
+main .documents table tbody tr:nth-child(odd) {
+  background-color: #d2f2f1;
+}
+main .documents table th,
+main .documents table td {
+  padding: 1rem;
+  width: 25%;
+}
+main .documents table th:last-child,
+main .documents table td:last-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .documents table .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .documents table .icons .download-pdf {
+  color: #000;
+}
+main .documents table .icons .fa-file-pdf {
+  font-size: 20px;
+  cursor: pointer;
+}
+main .documents table .icons .fa-file-pdf:hover {
+  color: #1a9e9a;
+}
+main .categories {
+  padding: 1.5rem;
+  width: 30%;
+  height: 100%;
+  background-color: #d2f2f1;
+  border-radius: 1.5rem;
+  border: 3px solid #1a9e9a;
+}
+main .categories .category-title {
+  color: #505050;
+}
+main .categories .tags {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .categories .tags span {
+  padding: 0.5rem 1.25rem;
+  margin: 0.125rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #505050;
+  text-align: center;
+  border: 1px solid #505050;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main .categories .tags span:hover {
+  background-color: #8ededb;
+}
+main .categories .tags span.active {
+  background-color: #1a9e9a;
+  color: #fff;
+}/*# sourceMappingURL=reports.css.map */

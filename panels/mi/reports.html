@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sava Energy | QC Reports</title>
-    <!------- Font Awesome 6.5.2 ------->
-    <link rel="stylesheet" href="../../src/icons/fontawesome/css/all.min.css">
-    <!------- Styles ------->
+    <!------ Font Awesome ------>
+    <link rel="stylesheet" href="./../../src/icons/fontawesome/css/all.min.css">
+    <!------ Styles ------>
     <link rel="stylesheet" href="./../../src/styles/reports.css">
 </head>
 <body>
-    <!------- Preloader ------->
+    <!------ Preloader ------>
     <div class="preloader" preloader>
         <div class="cubes">
             <div class="cube"><div class="cube_inner"></div></div>
@@ -18,13 +18,13 @@
             <div class="cube"><div class="cube_inner"></div></div>
         </div>
     </div>
-    <!------- Navbar ------->
+    <!------ Navbar ------>
     <nav>
         <div class="title">
             <h1 class="typography">MI Kish</h1>
             <li class="nav-links">
-                <a href="reports.html" class="active">QC Reports</a>
-                <a href="equipments.html">Equipments Inventory</a>
+                <a href="./reports.html" class="active">QC Reports</a>
+                <a href="./equpments.html">Equipments Inventory</a>
             </li>
         </div>
         <div class="nav-items">
@@ -42,9 +42,37 @@
             </div>
         </div>
     </nav>
-    <!------- Main ------->
-    
-    <!------- Script ------->
-    <script src="./../../src/scripts/reports.js"></script>
+    <!------ Main ------>
+    <main>
+        <!------ Table ------>
+        <section class="documents">
+            <h2>Mud Material QC Reports</h2>
+            <table>
+                <thead>
+                    <th>Batch No</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>File</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <!------ Categories ------>
+        <section class="categories">
+            <h2 class="category-title">Categories</h2>
+            <div class="tags">
+                <span class="tag active">All</span>
+                <span class="tag">CMC</span>
+                <span class="tag">Lime</span>
+                <span class="tag">Polyanionic Cellulose</span>
+                <span class="tag">Soda Ash</span>
+                <span class="tag">Starch LV</span>
+                <span class="tag">Starch HT</span>
+                <span class="tag">Xanthan Gum</span>
+            </div>
+        </section>
+    </main>
+    <!------ Script ------>
+    <script src="./../../src/scripts/mi/miReport.js"></script>
 </body>
 </html>
