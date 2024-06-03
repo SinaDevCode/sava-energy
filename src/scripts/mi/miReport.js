@@ -114,6 +114,24 @@ function drawTable(docs) {
     }
 }
 
+// ------- Filter Table Content By Search -------
+const search = document.querySelector('[searchBar]');
+const rows = document.querySelectorAll('tbody tr');
+
+search.addEventListener('input', event =>{
+    let value = event.target.value.toUpperCase();
+
+    rows.forEach(row => {
+        let columns = row.querySelectorAll('td');
+
+        if (columns[0].textContent.toUpperCase().startsWith(value) || columns[1].textContent.toUpperCase().startsWith(value)) {
+            row.style.display = 'table-row';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+
 // ------- Filter Table Content By Category -------
 const tags = document.querySelectorAll('.tags span');
 const tr = document.querySelectorAll('tr');
