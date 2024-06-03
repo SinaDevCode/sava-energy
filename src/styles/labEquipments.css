@@ -245,6 +245,9 @@ nav .nav-items ul .nav-icons i {
 nav .nav-items ul .nav-icons i:hover {
   color: #1a9e9a;
 }
+nav .nav-items ul .nav-icons i[menuToggle] {
+  display: none;
+}
 
 .title {
   margin: 2rem 0 1rem 2rem;

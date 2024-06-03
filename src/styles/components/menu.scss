@@ -1,0 +1,27 @@
+.menu {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $Menu;
+    background-color: $DarkSlateBlue;
+    display: none;
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: $Romance;
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+
+            &.active,
+            &:hover {
+                color: $DarkCyan;
+                background-color: $White;
+            }
+        }
+    }
+}

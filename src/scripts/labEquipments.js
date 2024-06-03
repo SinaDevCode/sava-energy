@@ -34,7 +34,7 @@ openMenu.addEventListener('click', () => {
 const products = document.querySelector(".content");
 
 const productData = async () => {
-    const res = await fetch("http://127.0.0.1:5501/src/jsons/labEquipments.json");
+    const res = await fetch("http://127.0.0.1:5500/sava-energy/src/jsons/labEquipments.json");
     const content = await res.json();
 
     for (let i = 0; i < content.length; i++) {

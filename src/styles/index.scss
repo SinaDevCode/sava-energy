@@ -1,5 +1,5 @@
 // ------- Imports -------
-@import './components/style.scss', './components/preloader.scss', './components/navbar.scss', './components/clients.scss';
+@import './components/style.scss', './components/preloader.scss', './components/navbar.scss', './components/menu.scss', './components/clients.scss';
 
 .title {
     margin: 2rem 0 1rem 2rem;
@@ -31,7 +31,7 @@
 }
 
 // ------- Banner -------
-.swiper {
+.banner {
     --swiper-pagination-color: var(--swiper-theme-color);
     --swiper-pagination-left: auto;
     --swiper-pagination-right: 8px;
@@ -45,12 +45,116 @@
     --swiper-pagination-bullet-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 4px;
     --swiper-pagination-bullet-vertical-gap: 6px;
-  }
+}
+
+// ------- Cards -------
+.cards {
+    display: flex;
+    flex-direction: column;
+    .cardSwiper {
+        height: 548px;
+        width: 100%;
+
+        .swiper-slide {
+            position: relative;
+            border-radius: 1.25rem;
+            
+
+            img {
+               
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:hover {
+
+                .content {
+                    bottom: 0;
+                }
+            }
+
+            .content {
+                $height: 50%;
+                padding: 2rem;
+                position: absolute;
+                left: 0;
+                bottom: -$height;
+                height: $height;
+                width: 100%;
+                background-color: $Romance;
+                transition: 0.3s ease;
+
+                &::before {
+                    $size: 3rem;
+                    content: '';
+                    position: absolute;
+                    top: -$size;
+                    left: 0;
+                    width: $size;
+                    aspect-ratio: 1;
+                    border-radius: 40%;
+                    background-color: transparent;
+                    box-shadow: -1rem 1rem $Romance;
+                }
+            }
+        }
+    }
+}
+
+// ------- Our Clients -------
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.clients {
+
+    .companies {
+        padding: 60px 0;
+        background-color: $Romance;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            z-index: $UpperLayer;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, transparent, $Romance);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, transparent, $Romance);
+        }
+
+        .scroller {
+            display: inline-block;
+            animation: scroll 35s infinite linear;
+
+            img {
+                height: 70px;
+                margin: 0 40px;
+            }
+        }
+    }
+}
 
 // ------- Breakpoint -------
 @media screen and (max-width: 1124px) {
     nav {
-
         .logo {
             width: 40%;
         }
@@ -64,18 +168,18 @@
                 .nav-links {
                     display: none;
                 }
+
+                .nav-icons {
+
+                    i[menuToggle] {
+                        display: block;
+                    }
+                }
             }
         }
     }
-}
 
-.test {
-    width: 100%;
-    display: flex;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .menu.open {
+        display: block;
     }
 }

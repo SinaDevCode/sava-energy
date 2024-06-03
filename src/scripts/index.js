@@ -21,31 +21,54 @@ images.forEach(img => {
 
 // ------- Menu -------
 const openMenu = document.querySelector('[menuToggle]');
+const menu = document.querySelector('.menu');
 
-openMenu.addEventListener('click', () => {
-    if (openMenu.classList.contains('fa-bars')) {
+openMenu.addEventListener('click', event => {
+    if (openMenu.classList.contains("fa-bars")) {
         openMenu.classList.replace('fa-bars', 'fa-x');
+        menu.classList.add('open');
     } else {
         openMenu.classList.replace('fa-x', 'fa-bars');
+        menu.classList.remove('open');
     }
 });
 
-// ------- Swiper -------
-const swiper = new Swiper(".swiper", {
+// ------- Banner -------
+const banner = new Swiper(".banner", {
     speed: 400,
     spaceBetween: 100,
     rewind: true,
-    // loop: true,
+    // loop: true
     autoplay: {
         delay: 5000,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".banner-pagination",
         clickable: true
     }
 });
 
+// ------- Cards -------
+const cardSwiper = new Swiper(".cardSwiper", {
+    slidePerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+    breakpoints: {
+        768: {
+            slidePerView: 2,
+            spaceBetween: 20
+        },
+        992: {
+            slidePerView: 3,
+            spaceBetween: 30
+        }
+    }
+});
 
 // ------- Our Clients -------
-const duplicate = document.querySelector('.logos-slide').cloneNode(true);
-document.querySelector('.logos').appendChild(duplicate);
+const duplicate = document.querySelector('.scroller').cloneNode(true);
+document.querySelector('.companies').appendChild(duplicate);
