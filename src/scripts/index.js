@@ -30,11 +30,21 @@ openMenu.addEventListener('click', () => {
     }
 });
 
+// ------- Swiper -------
 const swiper = new Swiper(".swiper", {
+    speed: 400,
+    spaceBetween: 100,
+    rewind: true,
+    // loop: true,
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
+        clickable: true
     }
 });
+
 
 // ------- Our Clients -------
 const duplicate = document.querySelector('.logos-slide').cloneNode(true);
