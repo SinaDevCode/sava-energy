@@ -50,22 +50,11 @@ const banner = new Swiper(".banner", {
 
 // ------- Cards -------
 const cardSwiper = new Swiper(".cardSwiper", {
-    slidePerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    rewind: true,
     autoplay: {
         delay: 4000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    },
-    breakpoints: {
-        768: {
-            slidePerView: 2,
-            spaceBetween: 20
-        },
-        992: {
-            slidePerView: 3,
-            spaceBetween: 30
-        }
     }
 });
 
