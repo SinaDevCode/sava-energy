@@ -2,7 +2,7 @@
 @import './components/style.scss', './components/preloader.scss', './components/navbar.scss', './components/menu.scss', './components/clients.scss';
 
 .title {
-    margin: 2rem 0 1rem 2rem;
+    margin: 2rem 0 1rem 0;
     color: $DimGray;
 
     h2 {
@@ -45,6 +45,25 @@
     --swiper-pagination-bullet-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 4px;
     --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+// ------- About -------
+.about {
+    padding: 4rem 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+        font-size: 16px;
+        line-height: 1.5rem;
+        text-align: justify;
+
+        .bold {
+            font-weight: 700;
+        }
+    }
+
 }
 
 // ------- Cards -------

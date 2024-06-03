@@ -315,7 +315,7 @@ nav .nav-items ul .nav-icons i[menuToggle] {
 }
 
 .title {
-  margin: 2rem 0 1rem 2rem;
+  margin: 2rem 0 1rem 0;
   color: #505050;
 }
 .title h2 {
@@ -354,6 +354,21 @@ nav .nav-items ul .nav-icons i[menuToggle] {
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+.about {
+  padding: 4rem 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.about p .bold {
+  font-weight: 700;
 }
 
 .cards {
