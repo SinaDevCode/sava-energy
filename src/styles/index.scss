@@ -2,7 +2,7 @@
 @import './components/style.scss', './components/preloader.scss', './components/navbar.scss', './components/menu.scss', './components/clients.scss', './components/footer.scss';
 
 .bold {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .title {
@@ -49,11 +49,83 @@
     --swiper-pagination-bullet-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 4px;
     --swiper-pagination-bullet-vertical-gap: 6px;
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// ------- ISO -------
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.iso {
+    padding: 1rem 0;
+    background-color: $DarkSlateBlue;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        z-index: $UpperLayer;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to left, transparent, $DarkSlateBlue);
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to right, transparent, $DarkSlateBlue);
+    }
+
+    .scroller {
+        display: flex;
+        align-items: center;
+        animation: scroll 70s infinite linear;
+        gap: 2rem;
+
+        span,
+        p {
+            color: $DarkCyan;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
 }
 
 // ------- About -------
 .about {
-    padding: 4rem 12rem;
+    padding: 4rem 9rem 6rem 9rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -106,7 +178,7 @@
         }
 
         p {
-            text-align: center;
+            text-align: justify;
         }
 
         img {
@@ -121,11 +193,13 @@
 .logo-motion {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 500px;
 
     video {
         width: 100%;
-        height: 100%
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 

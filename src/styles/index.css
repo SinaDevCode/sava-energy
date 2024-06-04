@@ -335,7 +335,7 @@ footer p {
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .title {
@@ -379,9 +379,70 @@ footer p {
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px;
 }
+.banner .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .swiper-slide .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.iso {
+  padding: 1rem 0;
+  background-color: #2d325a;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.iso::before, .iso::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 5;
+}
+.iso::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, #2d325a);
+}
+.iso::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, #2d325a);
+}
+.iso .scroller {
+  display: flex;
+  align-items: center;
+  animation: scroll 70s infinite linear;
+  gap: 2rem;
+}
+.iso .scroller span,
+.iso .scroller p {
+  color: #1a9e9a;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 .about {
-  padding: 4rem 12rem;
+  padding: 4rem 9rem 6rem 9rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -429,7 +490,7 @@ footer p {
   text-transform: uppercase;
 }
 .cards > div p {
-  text-align: center;
+  text-align: justify;
 }
 .cards > div img {
   width: 100%;
@@ -440,11 +501,13 @@ footer p {
 .logo-motion {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 .logo-motion video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contact {

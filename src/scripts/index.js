@@ -64,5 +64,8 @@ cards.forEach(card => {
     card.addEventListener('click', () => {
         window.location.href = `www.google.com/${card.className}`;
     });
-
 });
+
+// ------- ISO -------
+const clone = document.querySelector('.scroller').cloneNode(true);
+document.querySelector('.iso').appendChild(clone);
