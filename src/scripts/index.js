@@ -47,6 +47,26 @@ const banner = new Swiper(".banner", {
     }
 });
 
+// ------- Cards -------
+const cards = document.querySelectorAll('.cards div');
+
+cards.forEach(card => {
+    let image = card.querySelector('img');
+
+    card.addEventListener('mouseenter', () => {
+        image.setAttribute('src', `./src/images/poster/${card.className}-active.png`);
+    });
+
+    card.addEventListener('mouseleave', () => {
+        image.setAttribute('src', `./src/images/poster/${card.className}.png`);
+    })
+
+    card.addEventListener('click', () => {
+        window.location.href = `www.google.com/${card.className}`;
+    });
+
+});
+
 // ------- Our Clients -------
 const duplicate = document.querySelector('.scroller').cloneNode(true);
 document.querySelector('.companies').appendChild(duplicate);
