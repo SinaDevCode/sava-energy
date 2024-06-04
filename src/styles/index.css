@@ -317,10 +317,17 @@ nav .nav-items ul .nav-icons i[menuToggle] {
 }
 
 footer {
+  position: relative;
   width: 100%;
   padding: 2rem;
   background-color: #2d325a;
   border-top: 2px solid #dbb13b;
+}
+footer img {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  width: 5rem;
 }
 footer p {
   color: #fff;

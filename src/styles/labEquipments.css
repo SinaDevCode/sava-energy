@@ -32,6 +32,7 @@ input:-webkit-autofill:focus {
 input,
 p {
   color: #505050;
+  font-size: 15px;
 }
 
 a {
@@ -176,7 +177,7 @@ nav .nav-items {
   transition: all 0.3s ease;
 }
 nav .nav-items .login {
-  margin: 0.5rem 0.5rem 0 0;
+  margin: 0.5rem 5rem 0 0;
   padding: 0.5rem 2.75rem;
   color: #fff;
   font-size: 14px;
@@ -232,6 +233,7 @@ nav .nav-items ul .nav-icons {
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  margin-right: 4rem;
   gap: 1rem;
 }
 nav .nav-items ul .nav-icons i {
