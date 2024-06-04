@@ -146,6 +146,18 @@
     }
 }
 
+// ------- Contact Us -------
+.contact {
+    width: 100%;
+    height: 500px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
 // ------- Breakpoint -------
 @media screen and (max-width: 1124px) {
     nav {

@@ -439,6 +439,16 @@ nav .nav-items ul .nav-icons i[menuToggle] {
   margin: 0 40px;
 }
 
+.contact {
+  width: 100%;
+  height: 500px;
+}
+.contact iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media screen and (max-width: 1124px) {
   nav .logo {
     width: 40%;
