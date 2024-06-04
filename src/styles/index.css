@@ -319,6 +319,7 @@ footer {
   width: 100%;
   padding: 2rem;
   background-color: #2d325a;
+  border-top: 2px solid #dbb13b;
 }
 footer p {
   color: #fff;
