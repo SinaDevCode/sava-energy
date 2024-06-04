@@ -176,7 +176,7 @@ nav .nav-items {
   transition: all 0.3s ease;
 }
 nav .nav-items .login {
-  margin: 0.5rem 0.5rem 0 0;
+  margin: 0.5rem 5rem 0 0;
   padding: 0.5rem 2.75rem;
   color: #fff;
   font-size: 14px;
@@ -232,6 +232,7 @@ nav .nav-items ul .nav-icons {
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  margin-right: 4rem;
   gap: 1rem;
 }
 nav .nav-items ul .nav-icons i {
@@ -317,6 +318,11 @@ nav .nav-items ul .nav-icons i[menuToggle] {
 footer {
   width: 100%;
   padding: 2rem;
+  background-color: #2d325a;
+}
+footer p {
+  color: #fff;
+  text-align: center;
 }
 
 .bold {
@@ -350,7 +356,7 @@ footer {
 }
 
 .banner {
-  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-color: #dbb13b;
   --swiper-pagination-left: auto;
   --swiper-pagination-right: 8px;
   --swiper-pagination-bottom: 8px;
@@ -418,9 +424,12 @@ footer {
     transform: translateX(-100%);
   }
 }
+.clients {
+  padding: 0 12rem;
+}
 .clients .companies {
   padding: 60px 0;
-  background-color: #f0f1f3;
+  background-color: #fff;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
@@ -435,11 +444,11 @@ footer {
 }
 .clients .companies::before {
   left: 0;
-  background: linear-gradient(to left, transparent, #f0f1f3);
+  background: linear-gradient(to left, transparent, #fff);
 }
 .clients .companies::after {
   right: 0;
-  background: linear-gradient(to right, transparent, #f0f1f3);
+  background: linear-gradient(to right, transparent, #fff);
 }
 .clients .companies .scroller {
   display: inline-block;

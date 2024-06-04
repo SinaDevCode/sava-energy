@@ -36,7 +36,7 @@
 
 // ------- Banner -------
 .banner {
-    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-color: #dbb13b;
     --swiper-pagination-left: auto;
     --swiper-pagination-right: 8px;
     --swiper-pagination-bottom: 8px;
@@ -113,10 +113,11 @@
 }
 
 .clients {
+    padding: 0 12rem;
 
     .companies {
         padding: 60px 0;
-        background-color: $Romance;
+        background-color: $White;
         position: relative;
         white-space: nowrap;
         overflow: hidden;
@@ -133,12 +134,12 @@
 
         &::before {
             left: 0;
-            background: linear-gradient(to left, transparent, $Romance);
+            background: linear-gradient(to left, transparent, $White);
         }
 
         &::after {
             right: 0;
-            background: linear-gradient(to right, transparent, $Romance);
+            background: linear-gradient(to right, transparent, $White);
         }
 
         .scroller {
