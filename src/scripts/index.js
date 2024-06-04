@@ -48,16 +48,6 @@ const banner = new Swiper(".banner", {
     }
 });
 
-// ------- Cards -------
-const cardSwiper = new Swiper(".cardSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    rewind: true,
-    autoplay: {
-        delay: 4000,
-    }
-});
-
 // ------- Our Clients -------
 const duplicate = document.querySelector('.scroller').cloneNode(true);
 document.querySelector('.companies').appendChild(duplicate);
