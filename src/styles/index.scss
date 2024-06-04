@@ -115,57 +115,6 @@
         }
     }
 }
-// ------- Our Clients -------
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.clients {
-    padding: 0 12rem;
-
-    .companies {
-        padding: 60px 0;
-        background-color: $White;
-        position: relative;
-        white-space: nowrap;
-        overflow: hidden;
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 250px;
-            height: 100%;
-            z-index: $UpperLayer;
-        }
-
-        &::before {
-            left: 0;
-            background: linear-gradient(to left, transparent, $White);
-        }
-
-        &::after {
-            right: 0;
-            background: linear-gradient(to right, transparent, $White);
-        }
-
-        .scroller {
-            display: inline-block;
-            animation: scroll 35s infinite linear;
-
-            img {
-                height: 50px;
-                margin: 0 40px;
-            }
-        }
-    }
-}
 
 // ------- Contact Us -------
 .contact {

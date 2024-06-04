@@ -437,49 +437,6 @@ footer p {
      object-fit: contain;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.clients {
-  padding: 0 12rem;
-}
-.clients .companies {
-  padding: 60px 0;
-  background-color: #fff;
-  position: relative;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.clients .companies::before, .clients .companies::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  z-index: 5;
-}
-.clients .companies::before {
-  left: 0;
-  background: linear-gradient(to left, transparent, #fff);
-}
-.clients .companies::after {
-  right: 0;
-  background: linear-gradient(to right, transparent, #fff);
-}
-.clients .companies .scroller {
-  display: inline-block;
-  animation: scroll 35s infinite linear;
-}
-.clients .companies .scroller img {
-  height: 50px;
-  margin: 0 40px;
-}
-
 .contact {
   width: 100%;
   height: 500px;

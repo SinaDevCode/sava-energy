@@ -66,7 +66,3 @@ cards.forEach(card => {
     });
 
 });
-
-// ------- Our Clients -------
-const duplicate = document.querySelector('.scroller').cloneNode(true);
-document.querySelector('.companies').appendChild(duplicate);
