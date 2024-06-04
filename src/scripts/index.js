@@ -37,7 +37,7 @@ openMenu.addEventListener('click', event => {
 const banner = new Swiper(".banner", {
     speed: 400,
     spaceBetween: 100,
-    loop: true
+    loop: true,
     autoplay: {
         delay: 5000,
     },
