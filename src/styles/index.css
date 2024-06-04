@@ -437,6 +437,16 @@ footer p {
   object-fit: contain;
 }
 
+.logo-motion {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.logo-motion video {
+  width: 100%;
+  height: 100%;
+}
+
 .contact {
   width: 100%;
   height: 500px;
