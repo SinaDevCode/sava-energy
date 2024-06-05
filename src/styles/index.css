@@ -342,26 +342,22 @@ footer p {
   margin: 2rem 0 1rem 0;
   color: #505050;
 }
-.title h2 {
+.title h3 {
+  font-size: 30px;
+  font-weight: 700;
   position: relative;
-  font-size: 15px;
   padding-left: 1.5rem;
-  font-weight: 500;
 }
-.title h2::before {
+.title h3::before {
   content: "";
   position: absolute;
   width: 1.25rem;
-  height: 1.5px;
+  height: 2px;
   top: 50%;
   left: 0rem;
   border-radius: 1rem;
   background-color: #dbb13b;
   transform: translateY(-50%);
-}
-.title h3 {
-  font-size: 30px;
-  font-weight: 700;
 }
 
 .banner {
@@ -373,8 +369,8 @@ footer p {
   --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-width: 8px;
   --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-inactive-color: #dbb13b;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px;
@@ -507,12 +503,7 @@ footer p {
   display: flex;
   width: 100%;
   height: 500px;
-}
-.logo-motion video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  background-color: #2d325a;
 }
 
 .contact {
