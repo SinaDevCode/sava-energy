@@ -30,7 +30,7 @@
 
 // ------- Banner -------
 .banner {
-    --swiper-pagination-color: #dbb13b;
+    --swiper-pagination-color: #505050;
     --swiper-pagination-left: auto;
     --swiper-pagination-right: 8px;
     --swiper-pagination-bottom: 8px;
@@ -38,7 +38,7 @@
     --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 8px;
     --swiper-pagination-bullet-height: 8px;
-    --swiper-pagination-bullet-inactive-color: #dbb13b;
+    --swiper-pagination-bullet-inactive-color: #505050;
     --swiper-pagination-bullet-inactive-opacity: 0.4;
     --swiper-pagination-bullet-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 4px;
@@ -166,9 +166,30 @@
         // border: 3px solid transparent;
         border-radius: 0.5rem;
 
+        .inactive {
+            display: block;
+        }
+
+        .active {
+            display: none;
+        }
+
         &:hover {
-            cursor: pointer;
             // border-color: $White;
+
+            .inactive {
+                display: none;
+            }
+
+            .active {
+                display: block;
+                cursor: pointer;
+            }
+
+            h4 {
+                color: $White;
+                cursor: pointer;
+            }
         }
 
         h4 {

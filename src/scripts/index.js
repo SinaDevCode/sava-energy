@@ -48,21 +48,13 @@ const banner = new Swiper(".banner", {
 });
 
 // ------- Cards -------
-const cards = document.querySelectorAll('.cards div');
+const cards = document.querySelectorAll('[card]');
 
 cards.forEach(card => {
-    let image = card.querySelector('img');
-
-    card.addEventListener('mouseenter', () => {
-        image.setAttribute('src', `./src/images/poster/${card.className}-active.png`);
-    });
-
-    card.addEventListener('mouseleave', () => {
-        image.setAttribute('src', `./src/images/poster/${card.className}.png`);
-    })
+    let div = card.closest('div');
 
     card.addEventListener('click', () => {
-        window.location.href = `www.google.com/${card.className}`;
+        window.location.href = `www.google.com/${div.className}`;
     });
 });
 

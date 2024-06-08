@@ -1,50 +1,66 @@
 [
     {
-        "src": "./src/images/products/Sava-Site-Pic-2.jpg",
-        "title": "VG Meter-FANN 35"
+        "src": "./src/images/products/Sava-Site-Pic-2.png",
+        "title": "title 1"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-12.png",
+        "src": "./src/images/products/Sava-Site-Pic-3.png",
         "title": "VG Meter-OFITE"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-7.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-4.png",
         "title": "API Filter Press-OFITE"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-11.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-5.png",
         "title": "HT-HP Filter Press-OFITE"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-5.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-6.png",
         "title": "Retort Kit-OFITE"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-6.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-7.png",
         "title": "Mud Balance-OFITE"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-9.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-8.png",
         "title": "Mud Balance-FANN"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-10.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-9.png",
         "title": "Marsh Funnel & Cup"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-4.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-10.png",
         "title": "Mixer 3Cup-Hamilton"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-3.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-11.png",
         "title": "Title-3"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-8.jpg",
+        "src": "./src/images/products/Sava-Site-Pic-14.png",
         "title": "Title-8"
     },
     {
-        "src": "./src/images/products/Sava-Site-Pic-13.png",
+        "src": "./src/images/products/Sava-Site-Pic-15.png",
+        "title": "Filter Paper FANN"
+    },
+    {
+        "src": "./src/images/products/Sava-Site-Pic-16.png",
+        "title": "Filter Paper FANN"
+    },
+    {
+        "src": "./src/images/products/Sava-Site-Pic-17.png",
+        "title": "Filter Paper FANN"
+    },
+    {
+        "src": "./src/images/products/Sava-Site-Pic-18.png",
+        "title": "Filter Paper FANN"
+    },
+    {
+        "src": "./src/images/products/Sava-Site-Pic-19.png",
         "title": "Filter Paper FANN"
     }
 ]

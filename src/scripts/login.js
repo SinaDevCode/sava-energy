@@ -28,7 +28,7 @@ eye.addEventListener('click', () => {
 });
 
 const login = async () => {
-    const res = await fetch("http://127.0.0.1:5501/src/jsons/accounts.json");
+    const res = await fetch("http://127.0.0.1:5500/src/jsons/accounts.json");
     const data = await res.json();
 
     if (userInput.value === "" || passInput.value === "") {
@@ -36,7 +36,7 @@ const login = async () => {
     } else {
         let result = data.find(arr => arr.username === userInput.value && arr.password === passInput.value);
         if (result) {
-            window.location.href = `http://127.0.0.1:5501/panels/${result.id}/reports.html`;
+            window.location.href = `http://127.0.0.1:5500/panels/${result.id}/reports.html`;
         } else {
             userInput.value = '';
             passInput.value = '';
