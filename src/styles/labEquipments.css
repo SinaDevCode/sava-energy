@@ -166,6 +166,10 @@ nav .logo {
   width: 30%;
   transition: all 0.3s ease;
 }
+nav .logo video {
+  height: 75px;
+  width: 150px;
+}
 nav .nav-items {
   width: 70%;
   height: 100%;
