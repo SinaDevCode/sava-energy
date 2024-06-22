@@ -18,6 +18,11 @@ nav {
         justify-content: center;
         width: 30%;
         transition: $Transition;
+
+        video {
+            height: 75px;
+            width: 150px;
+        }
     }
 
     .nav-items {
