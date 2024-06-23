@@ -22,6 +22,9 @@ nav {
         video {
             height: 100px;
             width: 175px;
+            outline: none;
+            border: none;
+            overflow: hidden;
         }
     }
 
@@ -64,7 +67,7 @@ nav {
             padding: 0 1rem;
 
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 left: calc(0.4px - 2rem);
                 height: 100%;
@@ -100,7 +103,7 @@ nav {
                 padding: 0.5rem;
                 margin-right: 4rem;
                 gap: 1rem;
-                
+
                 i {
                     color: $White;
                     font-size: 1rem;
